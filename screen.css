@@ -38,11 +38,11 @@ figcaption {
   padding: 8px;
 }
 
-ul {
-  list-style: disc;
+#education {
+  list-style-type: circle;
   padding-left: 25px;
-  padding-bottom: 25px;
 }
+
 
 img {
   display: block;
