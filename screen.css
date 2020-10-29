@@ -18,8 +18,20 @@ h2 {
   font-weight: bold;
 }
 h3 {
-  padding-top: 4px;
+  padding-top: 25px;
   font-style: italic;
+}
+h1 {
+  text-align: center;
+  font-size: 22px;
+
+}
+footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 figcaption {
