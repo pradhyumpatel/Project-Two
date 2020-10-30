@@ -20,6 +20,7 @@ h2 {
 }
 h3 {
   padding-top: 25px;
+  padding-bottom: 12.5px;
   font-style: italic;
 }
 h1 {
@@ -36,6 +37,12 @@ footer {
   font-size: 10px;
 }
 
+.background img {
+  min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 img {
   display: block;
@@ -43,6 +50,7 @@ img {
   padding-bottom: 10px;
   padding-top: 10px;
 }
+
 
 
 .contact a {
@@ -71,19 +79,10 @@ img {
 }
 
 /* Resume page Changes bullet points */
-#education,
-#experience,
-#language,
-#skills {
-  list-style-type: circle;
-  padding-left: 25px;
-}
-.education,
-.experience,
-.language,
-.skills #bullet{
-  list-style-type: circle;
-  padding-left: 25px;
+
+#bullet {
+  margin-left: 25px; padding-left: 0;
+  list-style-type: square;
 }
 /* Travel Page Paragraph Changes */
 #content p{
