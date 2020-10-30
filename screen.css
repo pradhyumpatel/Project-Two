@@ -36,20 +36,20 @@ footer {
   font-size: 10px;
 }
 
-figcaption {
-  padding: 8px;
-}
-
 
 img {
   display: block;
   max-width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
+
 
 .contact a {
   text-decoration: none;
   font-size: 19px;
 }
+
 /* Begin site styles below */
 .nav li{
   padding-bottom: 8px;
@@ -65,27 +65,31 @@ img {
   background: #f4853b;
 }
 
-
+/* Home page Intro Paragraph Changes */
 #intro {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-#education {
-  list-style-type: circle;
-  padding-left: 25px;
-}
-#experience {
-  list-style-type: circle;
-  padding-left: 25px;
-}
-#language {
-  list-style-type: circle;
-  padding-left: 25px;
-}
+/* Resume page Changes bullet points */
+#education,
+#experience,
+#language,
 #skills {
   list-style-type: circle;
   padding-left: 25px;
 }
+.education,
+.experience,
+.language,
+.skills #bullet{
+  list-style-type: circle;
+  padding-left: 25px;
+}
+/* Travel Page Paragraph Changes */
+#content p{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 
 
 /* Begin State styles below */
@@ -114,5 +118,20 @@ img {
 @media screen and (min-width: 650px) {
   .nav {
     width: 66.6666666667%;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  #img {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around | center;
+  }
+  #img img{
+    min-width: 0;
+    width: 350px;
+    height: 200px;
+    padding: 10px;
   }
 }
