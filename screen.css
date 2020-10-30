@@ -95,8 +95,8 @@ img {
 
 /* Begin State styles below */
 
-@media screen and (min-width: 330px) {
-
+@media screen and (min-width: 20.625em) {
+/*330 px / 16 px*/
   .nav::after{
     content: "";
     display: block;
@@ -116,13 +116,15 @@ img {
   }
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 40.625em) {
+  /*650px/16px*/
   .nav {
     width: 66.6666666667%;
   }
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 28.125em) {
+  /*450px/16px*/
   #img {
     display: flex;
     flex-wrap: wrap;
@@ -131,8 +133,8 @@ img {
   }
   #img img{
     min-width: 0;
-    width: 350px;
-    height: 200px;
+    width: 21.875em; /*350px/16px*/
+    height: 12.5em; /*200px/16px*/
     padding: 0.5em; /*10px/20px*/
   }
 }
