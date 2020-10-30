@@ -25,16 +25,7 @@ h3 {
 h1 {
   text-align: center;
   font-size: 22px;
-
-}
-nav {
-  display: inline;
   padding-bottom: 25px;
-}
-
-
-#intro {
-  font-family: 'Source Sans Pro', sans-serif;
 }
 footer {
   position: static;
@@ -42,10 +33,41 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
+  font-size: 10px;
 }
 
 figcaption {
   padding: 8px;
+}
+
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.contact a {
+  text-decoration: none;
+  font-size: 19px;
+}
+/* Begin site styles below */
+.nav li{
+  padding-bottom: 8px;
+}
+.nav a {
+  display: block;
+  text-decoration: none;
+  background: #247be1;
+  color: #0af9eb;
+  padding: 9px;
+}
+.nav a:hover {
+  background: #f4853b;
+}
+
+
+#intro {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 #education {
@@ -65,8 +87,32 @@ figcaption {
   padding-left: 25px;
 }
 
-img {
-  display: block;
-  max-width: 100%;
+
+/* Begin State styles below */
+
+@media screen and (min-width: 330px) {
+
+  .nav::after{
+    content: "";
+    display: block;
+    clear: both;
+    float: none;
+  }
+  .nav li{
+    float: left;
+    width: 33.3333333333%;
+    text-align: center;
+  }
+  .nav a {
+    margin-right: 8px;
+  }
+  .nav li:last-child a {
+    margin-right: 0;
+  }
 }
-/* Begin site styles below */
+
+@media screen and (min-width: 650px) {
+  .nav {
+    width: 66.6666666667%;
+  }
+}
