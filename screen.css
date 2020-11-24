@@ -69,12 +69,13 @@ img {
   display: block;
   text-decoration: none;
   background: #247be1;
-  color: #0af9eb;
+  color: #e3803f;
   padding: 0.45em; /*9px/20px*/
 }
 .nav a:hover {
   background: #f4853b;
 }
+
 
 /* Home page Intro Paragraph Changes */
 #intro {
@@ -96,7 +97,7 @@ img {
 
 
 /* Begin State styles below */
-  /* 330 px / 16 px */
+/* 330 px / 16 px */
 @media screen and (min-width: 20.625em) {
   .nav::after {
     content: "";
